@@ -23,7 +23,7 @@ puts "Su Mo Tu We Th Fr Sa"
 print "   " * first_date.wday
 
 (first_date..last_date).each do |date|
-  print (date.day.to_s.rjust(2))
+  print date.day.to_s.rjust(2)
   if date.saturday?
     print "\n"
   else
