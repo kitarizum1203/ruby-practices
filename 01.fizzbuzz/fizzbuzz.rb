@@ -1,15 +1,15 @@
 #!/usr/bin/env ruby
 number = 0
 while number < 20
+  binding.break
   number += 1
-  if (number % 3 == 0) && (number % 5 == 0) # 3と5両方の倍数の場合
+  if (number % 3 == 0) && (number % 5 == 0)
     puts "FizzBuzz"
-  elsif number % 3 == 0 # 3の倍数の場合
+  elsif number % 3 == 0
     puts "Fizz"
-  elsif number % 5 == 0 # 5の倍数の場合
+  elsif number % 5 == 0 
     puts "Buzz"
-  else # 上記以外の場合
+  else
     puts number
   end
 end
-
